@@ -27,3 +27,18 @@ http {
         server 127.0.0.1:8000; 
     }
    
+    server {
+     
+        server_name  www.byhy.com;  
+
+，        
+        root /home/byhy/bysms_frontend/z_dist;
+        
+       
+        location /api/      {
+            proxy_pass         http://apiserver;
+            proxy_set_header   Host $host;
+        }
+    }
+
+}
