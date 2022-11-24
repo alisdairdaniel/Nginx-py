@@ -3,7 +3,7 @@ worker_processes  2;
 
 events {
    
-    worker_connections  2048; 
+    worker_connections  4096; 
 }
 
 
@@ -24,7 +24,7 @@ http {
         # maintain a maximum of 20 idle connections to each upstream server
         keepalive 20;
 
-        server 127.0.0.1:8080; 
+        server 127.0.0.1:80; 
     }
    
     server {
