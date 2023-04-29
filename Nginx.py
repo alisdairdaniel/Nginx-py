@@ -29,10 +29,10 @@ http {
    
     server {
      
-        server_name  www.byhy.com;  
+        server_name  www.baidu.com;  
 
 ，        
-        root /home/byhy/bysms_frontend/z_dist;
+        root /home/daidu/bysms_frontend/z_dist;
         
        
         location /api/      {
